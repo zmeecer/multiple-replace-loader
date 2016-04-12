@@ -1,11 +1,11 @@
 {
-  "name": "replace-loader",
-  "version": "0.1.0",
-  "description": "Webpack loader that applies regex to file",
+  "name": "multiple-replace-loader",
+  "version": "0.2.0",
+  "description": "File loader for Webpack which imports file with multiple regexp processing",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:fongandrew/replace-loader.git"
+    "url": "git@github.com:zmeecer/replace-loader.git"
   },
   "devDependencies": {},
   "dependencies": {

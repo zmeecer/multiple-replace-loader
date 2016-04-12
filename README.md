@@ -1,24 +1,23 @@
-# replace-loader
+# multiple-replace-loader
 A simple Webpack loader that applies regular expression replacement to a file
 
-Sample config usage that replaces instances of "green" with "blue":
+Sample config usage the replacement:
 
 ```javascript
-module.exports = {
-  
-  /* Other Stuff */
-  
+  ...
   modules: {
     loaders: [
-      { test: /\.css$/,
-        loader: "style!css!replace?flags=g&regex=green&sub=blue" }
+      {
+        test: /\.(html|xml)$/,
+        loaders: [
+          'file?name=[name].[ext]', 'multiple-replace?' +
+          'META_NAME=' + appPackage.appName +
+          '&META_DESCRIPTION=' + appPackage.description
+        ]
+      },
     ]
-  }
-}
+  ...
 ```
 
 Options
-* regex - The regular expression. This string will be dropped as is into the 
-  RegExp constructor, so make sure things are escaped properly.
-* flags - Flags used to construct the regular expression
-* sub - Replacement text
+* key (like META_NAME) - The regular expression or special label. * value - replacement text, for example, from package.json
