@@ -1,11 +1,24 @@
 {
   "name": "multiple-replace-loader",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "File loader for Webpack which imports file with multiple regexp processing",
+  "homepage": "https://github.com/zmeecer/multiple-replace-loader",
+  "author": {
+    "name": "Źmicier Jaraševič",
+    "email": "zmeecer@gmail.com"
+  },
+  "keywords": [
+    "loader",
+    "webpack",
+    "replace",
+    "regex",
+    "regexp",
+    "params"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:zmeecer/replace-loader.git"
+    "url": "git@github.com:zmeecer/multiple-replace-loader.git"
   },
   "devDependencies": {},
   "dependencies": {
